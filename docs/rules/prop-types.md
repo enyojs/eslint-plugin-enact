@@ -1,4 +1,4 @@
-# Prevent missing props validation in n Enact component definition (prop-types)
+# Prevent missing props validation in an Enact component definition (prop-types)
 
 PropTypes improve the reusability of your component by validating the received data.
 
@@ -74,7 +74,7 @@ var Hello = kind({
   },
 });
 
-// Referencing an external object disable the rule for the component
+// Referencing an external object disables the rule for the component
 var Hello = kind({
   name: 'Example',
   propTypes: myPropTypes,
