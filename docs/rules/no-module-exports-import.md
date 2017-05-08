@@ -2,6 +2,8 @@
 
 Reports the use of CommonJS exports with import declarations in modules.
 
+Based on the [no-import-module-exports rule](https://github.com/benmosher/eslint-plugin-import/pull/804) created by Thomas Marek.
+
 ## Options
 
 #### `exceptions`
@@ -10,7 +12,7 @@ Reports the use of CommonJS exports with import declarations in modules.
    in the `some-file.js` file.
 
 ```json
-"import/no-import-module-exports": ["error", {
+"enact/no-module-exports-import": ["error", {
     "exceptions": ["**/*/some-file.js"]
 }]
 ```
