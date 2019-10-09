@@ -10,7 +10,7 @@ This rule supersedes `react/prop-types`.  Be sure to disable `react/prop-types` 
 
 The following patterns are considered warnings:
 
-```jsx
+```js
 const Hello = kind({
   name: 'Example',
   render: function ({name}) {
@@ -41,7 +41,7 @@ const Hello = kind({
 
 Examples of correct usage without warnings:
 
-```jsx
+```js
 const Hello = kind({
   name: 'Example',
   propTypes: {
@@ -68,7 +68,7 @@ const Hello = kind({
 
 The following patterns are not considered warnings:
 
-```jsx
+```js
 const Hello = kind({
   name: 'Example',
   render: function () {

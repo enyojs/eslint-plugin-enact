@@ -9,7 +9,7 @@ This rule supersedes `react/display-name`.  Be sure to disable `react/display-na
 The following patterns are considered warnings:
 
 ```js
-var Hello = createReactClass({
+const Hello = createReactClass({
   render: function() {
     return <div>Hello {this.props.name}</div>;
   }
