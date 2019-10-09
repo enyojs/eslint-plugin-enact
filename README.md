@@ -79,8 +79,8 @@ Finally, enable all of the rules that you would like to use:
 
 # List of supported rules
 
-* [enact/kind-name](docs/rules/display-name.md): Prevent missing `name` in a Enact component definition
-* enact/display-name: Prevent missing `displayName` in a React component definitions without false-flagging Enact kinds
+* [enact/kind-name](docs/rules/kind-name.md): Prevent missing `name` in a Enact component definition
+* [enact/display-name](docs/rules/display-name.md): Prevent missing `displayName` in a React component definitions without false-flagging Enact kinds
 * [enact/prop-types](docs/rules/prop-types.md): Prevent missing props validation in a React component definition
 * [enact/no-module-exports-import](docs/rules/no-module-exports-import.md): Disallow module.exports with import statements (see [webpack issue #4039](https://github.com/webpack/webpack/issues/4039))
 
@@ -89,8 +89,8 @@ Finally, enable all of the rules that you would like to use:
 - React: [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react)
 
 # License
+
 ESLint-plugin-Enact is based on work from ESLint-plugin-React and is licensed under the [MIT License](http://www.opensource.org/licenses/mit-license.php).
-ESLint-plugin-React is licensed under the [MIT License](http://www.opensource.org/licenses/mit-license.php).
 
 ## Copyright and License Information
 
@@ -112,4 +112,3 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
-

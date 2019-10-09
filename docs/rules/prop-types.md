@@ -4,34 +4,36 @@ PropTypes improve the reusability of your component by validating the received d
 
 It can warn other developers if they make a mistake while reusing the component with improper data type.
 
+This rule supersedes `react/prop-types`.  Be sure to disable `react/prop-types` in your config.
+
 ## Rule Details
 
 The following patterns are considered warnings:
 
 ```jsx
-var Hello = kind({
+const Hello = kind({
   name: 'Example',
-  render: function({name}) {
+  render: function ({name}) {
     return <div>Hello {name}</div>;
   }
 });
 
-var Hello = kind({
+const Hello = kind({
   name: 'Example',
   propTypes: {
     firstname: React.PropTypes.string.isRequired
   },
-  render: function({firstname, lastname}) {
+  render: function ({firstname, lastname}) {
     return <div>Hello {firstname} {lastname}</div>; // lastname type is not defined in propTypes
   }
 });
 
-var Hello = kind({
+const Hello = kind({
   name: 'Example',
   propTypes: {
     firstname: React.PropTypes.string.isRequired
   },
-  render: function({firstname, ...rest}) {
+  render: function ({firstname, ...rest}) {
     return <div>Hello {firstname} {rest.lastname}</div>; // lastname type is not defined in propTypes
   }
 });
@@ -40,25 +42,25 @@ var Hello = kind({
 Examples of correct usage without warnings:
 
 ```jsx
-var Hello = kind({
+const Hello = kind({
   name: 'Example',
   propTypes: {
     name: React.PropTypes.string.isRequired,
   },
-  render: function({name}) {
+  render: function ({name}) {
     return <div>Hello {name}</div>;
   },
 });
 
 // Or in when using spread operator within deconstructed render arguments:
-var Hello = kind({
+const Hello = kind({
   name: 'Example',
   propTypes: {
     firstname: React.PropTypes.string.isRequired,
     middlename: React.PropTypes.string.isRequired
     lastname: React.PropTypes.string.isRequired
   },
-  render: function({firstname, ...rest}) {
+  render: function ({firstname, ...rest}) {
     return <div>Hello {firstname} {rest.middlename} {rest.lastname}</div>;
   },
 });
@@ -67,18 +69,18 @@ var Hello = kind({
 The following patterns are not considered warnings:
 
 ```jsx
-var Hello = kind({
+const Hello = kind({
   name: 'Example',
-  render: function() {
+  render: function () {
     return <div>Hello World</div>;
   },
 });
 
 // Referencing an external object disables the rule for the component
-var Hello = kind({
+const Hello = kind({
   name: 'Example',
   propTypes: myPropTypes,
-  render: function({name}) {
+  render: function ({name}) {
     return <div>Hello {name}</div>;
   },
 });
@@ -90,7 +92,7 @@ This rule can take one argument to ignore some specific props during validation.
 
 ```
 ...
-"prop-types": [<enabled>, { ignore: <ignore>, customValidators: <customValidator> }]
+"enact/prop-types": [<enabled>, { ignore: <ignore>, customValidators: <customValidator> }]
 ...
 ```
 
