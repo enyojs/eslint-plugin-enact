@@ -54,7 +54,7 @@ With ESLint 1.x.x:
 }
 ```
 
-With ESLint 2.x.x or 3.x.x:
+With ESLint 2.x.x+:
 
 ```json
 {
@@ -84,6 +84,8 @@ Finally, enable all of the rules that you would like to use:
 * [enact/prop-types](docs/rules/prop-types.md): Prevent missing props validation in a React component definition
 * [enact/no-module-exports-import](docs/rules/no-module-exports-import.md): Disallow module.exports with import statements (see [webpack issue #4039](https://github.com/webpack/webpack/issues/4039))
 
+> Note: `enact/display-name` and `enact/prop-types` supersede `react/display-name` and `react/prop-types`, respectively. The latter two should not be disabled when used with Enact.
+
 ## Other useful plugins
 
 - React: [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react)
@@ -97,7 +99,7 @@ ESLint-plugin-Enact is based on work from ESLint-plugin-React and is licensed un
 Unless otherwise specified, all content, including all source code files and
 documentation files in this repository are:
 
-Copyright (c) 2016-2018 LG Electronics
+Copyright (c) 2016-2019 LG Electronics
 
 Unless otherwise specified or set forth in the NOTICE file, all content,
 including all source code files and documentation files in this repository are:
