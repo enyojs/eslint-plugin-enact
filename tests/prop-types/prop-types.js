@@ -20,6 +20,7 @@ ruleTester.run('prop-types', rule, {
 	valid: [
 		"kind({propTypes: {one: PropTypes.string}, render: ({one}) => (<div>{one}</div>)});",
 		"kind({propTypes: {one: PropTypes.string}, computed: {fred: ({one}) => 1}});",
+		"kind({computed: {fred: ({styler}) => 1}});",
 		"kind({propTypes: {one: PropTypes.string}, handlers: {fred: (ev, {one}) => 1}});",
 		"kind({propTypes: {one: PropTypes.string}, handlers: {fred: (ev, {one}) => ev.target}});",
 		"kind({propTypes: {one: PropTypes.string}, computed: {fred: ({one}) => 1}, render: ({one, fred}) => (<div>{one}</div>)});",
