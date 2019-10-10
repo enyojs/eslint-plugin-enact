@@ -27,6 +27,7 @@ ruleTester.run('prop-types', rule, {
 		"kind({propTypes: {one: PropTypes.string}, handlers: {fred: (ev, {one}) => 1}, render: ({one, fred}) => (<div>{one}</div>)});",
 		"kind({propTypes: {one: PropTypes.string}, computed: {one: ({one}) => 1}, render: ({one}) => (<div>{one}</div>)});",
 		"kind({propTypes: {one: PropTypes.string}, handlers: {one: (ev, {one}) => 1}, render: ({one}) => (<div>{one}</div>)});",
+		"kind({handlers: {fred: (ev, props) => 1}, computed: {bilbo: ({fred}) => 2}});",
 	],
 	invalid: [
 		{
@@ -72,16 +73,23 @@ ruleTester.run('prop-types', rule, {
 			}]
 		},
 		{
-			code: "kind({handlers: {fred: (ev, props) => 1}, computed: {bilbo: ({fred}) => 2}});",
+			code: "kind({handlers: {fred: (ev, {bilbo}) => 1}, computed: {bilbo: (props) => 2}});",
 			errors: [{
-				message: '\'fred\' is missing in props validation',
+				message: '\'bilbo\' is missing in props validation',
 				type: 'Property'
 			}]
 		},
 		{
-			code: "kind({handlers: {fred: (ev, {bilbo}) => 1}, computed: {bilbo: (props) => 2}});",
+			code: "kind({computed: {bilbo: (props) => 2, baggins: ({bilbo}) => 3}});",
 			errors: [{
 				message: '\'bilbo\' is missing in props validation',
+				type: 'Property'
+			}]
+		},
+		{
+			code: "kind({handlers: {fred: (ev, props) => 1, wilma: (ev, {fred}) => 2}});",
+			errors: [{
+				message: '\'fred\' is missing in props validation',
 				type: 'Property'
 			}]
 		},
