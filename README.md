@@ -84,7 +84,7 @@ Finally, enable all of the rules that you would like to use:
 * [enact/prop-types](docs/rules/prop-types.md): Prevent missing props validation in a React component definition
 * [enact/no-module-exports-import](docs/rules/no-module-exports-import.md): Disallow module.exports with import statements (see [webpack issue #4039](https://github.com/webpack/webpack/issues/4039))
 
-> Note: `enact/display-name` and `enact/prop-types` supersede `react/display-name` and `react/prop-types`, respectively. The latter two should not be disabled when used with Enact.
+> Note: `enact/display-name` and `enact/prop-types` supersede `react/display-name` and `react/prop-types`, respectively. The latter two should be disabled when used with Enact.
 
 ## Other useful plugins
 
