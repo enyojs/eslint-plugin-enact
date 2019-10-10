@@ -6,6 +6,8 @@ It can warn other developers if they make a mistake while reusing the component 
 
 This rule supersedes `react/prop-types`.  Be sure to disable `react/prop-types` in your config.
 
+Props created using the `handlers` property are accessible to `computed` and `render`. Props created in `computed` are available in `render`.
+
 ## Rule Details
 
 The following patterns are considered warnings:
