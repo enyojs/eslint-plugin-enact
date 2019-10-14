@@ -8,8 +8,8 @@ by Enact/React in debugging messages.
 The following patterns are considered warnings:
 
 ```js
-var Hello = kind({
-  render: function() {
+const Hello = kind({
+  render: function () {
     return <div>Hello World</div>;
   }
 });
@@ -18,9 +18,9 @@ var Hello = kind({
 The following patterns are not considered warnings:
 
 ```js
-var Hello = kind({
+const Hello = kind({
   name: 'Example',
-  render: function() {
+  render: function () {
     return <div>Hello World</div>;
   }
 });
@@ -30,7 +30,7 @@ var Hello = kind({
 
 ```js
 ...
-"kind-name": [<enabled>]
+"enact/kind-name": [<enabled>]
 ...
 ```
 

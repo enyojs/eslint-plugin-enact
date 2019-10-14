@@ -4,6 +4,9 @@
   "author": "Jason Robitaille <jason.robitaille@lge.com>",
   "description": "Enact specific linting rules for ESLint",
   "main": "index.js",
+  "scripts": {
+    "test": "mocha ./tests/**/*.js"
+  },
   "files": [
     "LICENSE",
     "README.md",
@@ -34,5 +37,9 @@
     "react",
     "enact"
   ],
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "mocha": "^6.2.1"
+  }
 }
