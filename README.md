@@ -99,7 +99,7 @@ ESLint-plugin-Enact is based on work from ESLint-plugin-React and is licensed un
 Unless otherwise specified, all content, including all source code files and
 documentation files in this repository are:
 
-Copyright (c) 2016-2019 LG Electronics
+Copyright (c) 2016-2020 LG Electronics
 
 Unless otherwise specified or set forth in the NOTICE file, all content,
 including all source code files and documentation files in this repository are:
