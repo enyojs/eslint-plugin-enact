@@ -2,9 +2,9 @@
 
 The following is a curated list of changes in the Enact eslint plugin:
 
-## [unreleased]
+## [1.0.0] - (April 11, 2022)
 
-* Updated eslint 8.
+* Updated ESLint 8.
 
 ## [0.2.3]
 
@@ -12,7 +12,7 @@ The following is a curated list of changes in the Enact eslint plugin:
 
 ## [0.2.1]
 
-* Updated eslint 7.
+* Updated ESLint 7.
 
 ## [0.2.0]
 
