@@ -22,7 +22,7 @@
   "dependencies": {
     "doctrine": "^3.0.0",
     "jsx-ast-utils": "^3.3.3",
-    "minimatch": "^5.1.0"
+    "minimatch": "^5.1.2"
   },
   "peerDependencies": {
     "eslint": ">=8.0.0"
@@ -39,7 +39,7 @@
   ],
   "license": "Apache-2.0",
   "devDependencies": {
-    "eslint": "^8.28.0",
-    "mocha": "^10.1.0"
+    "eslint": "^8.32.0",
+    "mocha": "^10.2.0"
   }
 }
