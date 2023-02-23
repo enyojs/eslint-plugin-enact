@@ -22,7 +22,7 @@
   "dependencies": {
     "doctrine": "^3.0.0",
     "jsx-ast-utils": "^3.3.3",
-    "minimatch": "^5.1.6"
+    "minimatch": "^6.1.6"
   },
   "peerDependencies": {
     "eslint": ">=8.0.0"
