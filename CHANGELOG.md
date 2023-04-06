@@ -2,9 +2,9 @@
 
 The following is a curated list of changes in the Enact eslint plugin:
 
-## Unreleased
+## [1.0.2] - (April 6, 2023)
 
-* Updated `minimatch` dependency to version 6.x
+* Updated dependencies.
 
 ## [1.0.1] - (May 30, 2022)
 
