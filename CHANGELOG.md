@@ -2,6 +2,10 @@
 
 The following is a curated list of changes in the Enact eslint plugin:
 
+## [1.0.2] - (April 6, 2023)
+
+* Updated dependencies.
+
 ## [1.0.1] - (May 30, 2022)
 
 * Updated the `lockfileVersion` of npm-shrinkwrap file to v2.
