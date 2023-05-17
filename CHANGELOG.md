@@ -2,7 +2,7 @@
 
 The following is a curated list of changes in the Enact eslint plugin:
 
-## unreleased
+## [1.0.3] - (May 17, 2023)
 
 * Updated dependencies.
 
