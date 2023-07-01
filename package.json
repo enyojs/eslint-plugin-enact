@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-enact",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "Jason Robitaille <jason.robitaille@lge.com>",
   "description": "Enact specific linting rules for ESLint",
   "main": "index.js",
