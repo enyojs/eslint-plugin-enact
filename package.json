@@ -22,13 +22,13 @@
   "dependencies": {
     "doctrine": "^3.0.0",
     "jsx-ast-utils": "^3.3.3",
-    "minimatch": "^6.1.6"
+    "minimatch": "^9.0.3"
   },
   "peerDependencies": {
     "eslint": ">=8.0.0"
   },
   "engines": {
-    "node": ">=10.16.0"
+    "node": ">=14.17.0"
   },
   "keywords": [
     "eslint",
