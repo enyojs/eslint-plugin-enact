@@ -4,9 +4,9 @@ const rule = require('../../lib/rules/display-name'),
 	RuleTester = require('eslint').RuleTester;
 
 RuleTester.setDefaultConfig({
-	parserOptions: {
+	languageOptions: {
 		ecmaVersion: 6,
-		sourceType: "module",
+		sourceType: 'module',
 		ecmaFeatures: {
 			jsx: true
 		}
