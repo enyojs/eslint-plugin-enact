@@ -34,10 +34,8 @@ const eslintPluginEnact = {
 Object.assign(eslintPluginEnact.configs, {
 	recommended: {
 		languageOptions: {
-			parserOptions: {
-				ecmaFeatures: {
-					jsx: true
-				}
+			ecmaFeatures: {
+				jsx: true
 			}
 		},
 		rules: {
@@ -49,10 +47,8 @@ Object.assign(eslintPluginEnact.configs, {
 	},
 	all: {
 		languageOptions: {
-			parserOptions: {
-				ecmaFeatures: {
-					jsx: true
-				}
+			ecmaFeatures: {
+				jsx: true
 			}
 		},
 		rules: allRules
