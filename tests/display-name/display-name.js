@@ -6,7 +6,7 @@ const rule = require('../../lib/rules/display-name'),
 RuleTester.setDefaultConfig({
 	languageOptions: {
 		ecmaVersion: 6,
-		sourceType: 'module',
+		sourceType: "module",
 		ecmaFeatures: {
 			jsx: true
 		}

@@ -6,7 +6,7 @@ const rule = require('../../lib/rules/prop-types'),
 RuleTester.setDefaultConfig({
 	languageOptions: {
 		ecmaVersion: 6,
-		sourceType: 'module',
+		sourceType: "module",
 		ecmaFeatures: {
 			jsx: true
 		}
