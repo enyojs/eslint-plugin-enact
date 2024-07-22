@@ -2,6 +2,10 @@
 
 The following is a curated list of changes in the Enact eslint plugin:
 
+## [1.0.8] - (July 22, 2024)
+
+* Updated dependencies.
+
 ## [1.0.7] - (February 27, 2024)
 
 * Updated dependencies.
