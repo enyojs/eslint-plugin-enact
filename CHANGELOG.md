@@ -2,6 +2,10 @@
 
 The following is a curated list of changes in the Enact eslint plugin:
 
+## [unreleased]
+
+* Updated `minimatch` version to `^10.0.1` and the minimum version of Node to `^20.0.0 || >=22.0.0`.
+
 ## [1.0.8] - (July 22, 2024)
 
 * Updated dependencies.
