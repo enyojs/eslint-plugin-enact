@@ -29,8 +29,7 @@ ruleTester.run('display-name', rule, {
 		options: [{
 			ignoreTranspilerName: true
 		}]
-	},
-	{
+	}, {
 		code: "const t = kind({handlers: { myProp: (props) => (<div {...props}>Hello</div>)}});",
 		options: [{
 			ignoreTranspilerName: true
