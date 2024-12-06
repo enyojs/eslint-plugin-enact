@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-enact",
-  "version": "1.0.8",
+  "version": "2.0.0-alpha.1",
   "author": "Jason Robitaille <jason.robitaille@lge.com>",
   "description": "Enact specific linting rules for ESLint",
   "main": "index.js",
@@ -22,13 +22,13 @@
   "dependencies": {
     "doctrine": "^3.0.0",
     "jsx-ast-utils": "^3.3.5",
-    "minimatch": "^9.0.4"
+    "minimatch": "^10.0.1"
   },
   "peerDependencies": {
     "eslint": ">=8.0.0"
   },
   "engines": {
-    "node": ">=14.17.0"
+    "node": "^20.0.0 || >=22.0.0"
   },
   "keywords": [
     "eslint",
@@ -40,6 +40,6 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "eslint": "^8.57.0",
-    "mocha": "^10.5.1"
+    "mocha": "^10.7.3"
   }
 }
