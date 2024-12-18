@@ -2,8 +2,9 @@
 
 The following is a curated list of changes in the Enact eslint plugin:
 
-## [unreleased]
+## [2.0.0-alpha.1] - (December 6, 2024)
 
+* Fixed a deprecation warning regarding nodejs.
 * Updated `minimatch` version to `^10.0.1`.
 * Updated the minimum version of Node to `^20.0.0 || >=22.0.0`.
 * Updated Enact ESLint config to `9.1.5` including eslint related modules.
