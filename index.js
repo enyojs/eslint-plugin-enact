@@ -21,42 +21,33 @@ for (var key in rules) {
   exportedRules[key] = rules[key];
 }
 
-const eslintPluginEnact = {
-  meta: {
-    name: "eslint-plugin-enact",
-    version: "1.0.8"
-  },
-  configs: {},
-  rules: exportedRules
-}
-
-// assign configs here so we can reference `plugin`
-Object.assign(eslintPluginEnact.configs, {
-  recommended: {
-    languageOptions: {
-      parserOptions: {
-        ecmaFeatures: {
-          jsx: true
+module.exports = {
+  configs: {
+    recommended: {
+      languageOptions: {
+        parserOptions: {
+          ecmaFeatures: {
+            jsx: true
+          }
         }
+      },
+      rules: {
+        'enact/prop-types': 2,
+        'enact/kind-name': 2,
+        'enact/display-name': 2,
+        'enact/no-module-exports-import': 1
       }
     },
-    rules: {
-      'enact/prop-types': 2,
-      'enact/kind-name': 2,
-      'enact/display-name': 2,
-      'enact/no-module-exports-import': 1
+    all: {
+      languageOptions: {
+        parserOptions: {
+          ecmaFeatures: {
+            jsx: true
+          }
+        }
+      },
+      rules: allRules
     }
   },
-  all: {
-    languageOptions: {
-      parserOptions: {
-        ecmaFeatures: {
-          jsx: true
-        }
-      }
-    },
-    rules: allRules
-  }
-})
-
-module.exports = eslintPluginEnact;
+  rules: exportedRules
+};
