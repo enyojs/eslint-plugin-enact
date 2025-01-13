@@ -22,6 +22,7 @@ for (var key in rules) {
 }
 
 module.exports = {
+  rules: exportedRules,
   configs: {
     recommended: {
       languageOptions: {
@@ -48,6 +49,5 @@ module.exports = {
       },
       rules: allRules
     }
-  },
-  rules: exportedRules
+  }
 };
