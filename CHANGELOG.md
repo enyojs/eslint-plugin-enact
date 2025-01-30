@@ -2,9 +2,9 @@
 
 The following is a curated list of changes in the Enact eslint plugin:
 
-## unreleased
+## [unreleased]
 
-* Updated `eslint` to `^9.19.0` and adopted flat config.
+* Updated Enact ESLint config to `^9.19.0` including eslint related modules.
 
 ## [2.0.0-alpha.1] - (December 6, 2024)
 
